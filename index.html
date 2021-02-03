@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <h1>Variables</h1>
+
+    <h2>I - calculate</h2>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      document.getElementById("demo").innerHTML =
+        "The value of z is: " + z;
+    </script>
+
+    <p id="demo"></p>
+
+    <p id="division"></p>
+
+
+    <script>
+      var p = 10;
+      var i = 2;
+      var q = p / i;
+      document.getElementById("division").innerHTML =
+        "The value of q is: " + q;
+    </script>
+
+    <h2>II - concatenate sentence</h2>
+
+
+    <p>The result of adding "Julia" + " " + "Julia":</p>
+
+    <p id="concatenate"></p>
+
+    <script>
+      var x = "Julia" + " " + "Julia";
+      document.getElementById("concatenate").innerHTML = x;
+    </script>
+
+
+    <h2>III - VAT</h2>
+
+    <p id="vat"></p>
+
+
+
+    <h4>VAT Calculator</h4><br> Amount($): <input type="text" id="amount" name="txt_amount">
+    <br><br>
+    <button onclick="calculateVAT(amount.value)">Calculate Total Amount</button>
+
+    <script>
+      function calculateVAT(x) {
+        if (x.length == 0) {
+          alert("Numbers cannot be blank");
+          return;
+        }
+
+        if (isNaN(x)) {
+          alert("Value entered is not numeric");
+          return;
+        }
+
+        var result = parseInt(x) * 0.21;
+        alert("Multiplication: " + result);
+      }
+    </script>
+
+
+    <h1>Conditions</h1>
+
+
+    Conditions
+
+
+    <h4>II - maximum</h4>
+
+    <script>
+      var array = [267, 306, 108];
+      var largest = Math.max.apply(Math, array); // 306
+    </script>
+
+    <h4>IV - day’s number</h4>
+    
+    <p id="days"></p>
+
+    <script>
+      var day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+      }
+      document.getElementById("days").innerHTML = "Today is " + day;
+    </script>
+
+
+    <script src="script.js"></script>
+  </body>
+
+  </html>
