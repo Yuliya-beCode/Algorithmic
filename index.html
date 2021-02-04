@@ -93,7 +93,7 @@
     </script>
 
     <h4>IV - day’s number</h4>
-    
+
     <p id="days"></p>
 
     <script>
@@ -121,6 +121,160 @@
           day = "Saturday";
       }
       document.getElementById("days").innerHTML = "Today is " + day;
+    </script>
+
+
+    <h1>Loops</h1>
+
+    <script>
+      for I = 1 until n do {
+          output($I)
+        }
+
+        // Let's drink coffee
+      integer nbr_coffee = n
+      boolean has_coffee = true
+      while ($has_coffee == true)
+        do {
+          drink_coffee()
+          $nbr_coffee = $nbr_coffee - 1
+          if ($nbr_coffee == 0) then {
+            $has_coffee = false
+          }
+        }
+    </script>
+
+    <p id="loop2"></p>
+
+    <script>
+      var text = ""
+      var i = 0;
+
+      do {
+        text += "<br>The number is " + i;
+        i++;
+      }
+      while (i < 10);
+
+      document.getElementById("loop2").innerHTML = text;
+    </script>
+
+
+    <h1>Arrays</h1>
+
+    <h2>I print an array</h2>
+
+    <p id="array"></p>
+
+    <script>
+      var cats = ["Saab", "Miau", "Lucy"];
+      document.getElementById("array").innerHTML = cats;
+    </script>
+
+    <h2>II - maximum</h2>
+
+    <p>Write an algorithm which receives an array of integers and prints its maximum.</p>
+
+    <p id="max"></p>
+
+    <script>
+      document.getElementById("max").innerHTML =
+        Math.max(0, 150, 30, 20, 500, -200);
+    </script>
+
+    <h2>III - minimum</h2>
+
+    <p>Write an algorithm which receives an array of integers and prints its minimum.</p>
+
+    <p id="min"></p>
+
+    <script>
+      document.getElementById("min").innerHTML =
+        Math.min(0, 150, 30, 20, 500, -200);
+    </script>
+
+    <h2>IV - minimum position</h2>
+
+    <p>Write an algorithm which receives an array of integers and prints the position of its minimum.
+    </p>
+
+
+
+    <p>The lowest number is <span id="position"></span>.</p>
+
+    <script>
+      var points = [40, 100, 1, 5, 25, 10];
+      points.sort(function (a, b) {
+        return a - b
+      });
+      document.getElementById("position").innerHTML = points[0];
+    </script>
+
+
+    <h1>Functions</h1>
+
+    <h1>Trial by pseudo code</h1>
+
+    <p>III - sort an array</p>
+
+    <h2>JavaScript Array Sort</h2>
+
+    <p>Click the button to sort the array in ascending order.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="sort"></p>
+
+    <script>
+      var points = [40, 100, 1, 5, 25, 10, 11, 22, 56, 89];
+      document.getElementById("sort").innerHTML = points;
+
+      function myFunction() {
+        points.sort(function (a, b) {
+          return a - b
+        });
+        document.getElementById("sort").innerHTML = points;
+      }
+    </script>
+
+    <h2>II - translate</h2>
+
+    <p>
+
+      The main goal of pseudo code is to write down the logic behind an algorithm, so that you can easily translate it
+      into human speech or code.
+      Given the algorithm below
+
+      with your word explain its purpose
+
+      translate it into Python and Javascript <br>
+
+      <br>
+
+      function in_array(element,list_elements) { <br>
+            boolean exist = false <br>
+            for I = 0 until length($list_elements) do { <br>
+		        if $element == $list_elements[I] then {  <br>
+			      $exist = true
+		    }
+      	}
+	    return $exist <br>
+        }
+
+    </p>
+   
+    <h3>Translation in JavaScript</h3>
+  
+   <script>
+        var in_array = ["list", "list_elements"];
+
+      // Check if a value exists in the fruits array
+      if (in_array.indexOf("element") !== 1) {
+        document.write("true")
+      } else {
+        document.write("false")
+      }
+   
     </script>
 
 
