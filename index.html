@@ -231,14 +231,13 @@
     <h2>II - translate</h2>
 
     <p>
-
       The main goal of pseudo code is to write down the logic behind an algorithm, so that you can easily translate it
       into human speech or code.
       Given the algorithm below
 
-      with your word explain its purpose
+      - with your word explain its purpose
 
-      translate it into Python and Javascript
+      - translate it into Python and Javascript
 
       function in_array(element,list_elements) {
       boolean exist = false
@@ -253,6 +252,11 @@
     </p>
 
     <br>
+
+    <p>This function has two arguments: element and list_elements. The boolean exist is defined as false. The function will look for the "element" in the array till this will be found. 
+      Once the element is found, we are receiving the answer "true". Is element is not found, the function returns "false". 
+    </p>
+
     <p>Variant 1</p>
 
     <script>
@@ -303,35 +307,6 @@
           return a - b
         });
         document.getElementById("sort").innerHTML = points;
-      }
-    </script>
-
-    <h2>II - translate</h2>
-
-
-
-    function in_array(element,list_elements) { <br>
-    boolean exist = false <br>
-    for I = 0 until length($list_elements) do { <br>
-    if $element == $list_elements[I] then { <br>
-    $exist = true
-    }
-    }
-    return $exist <br>
-    }
-
-    </p>
-
-    <h3>Translation in JavaScript</h3>
-
-    <script>
-      var in_array = ["list", "list_elements"];
-
-      // Check if a value exists in the fruits array
-      if (in_array.indexOf("element") !== 1) {
-        document.write("true")
-      } else {
-        document.write("false")
       }
     </script>
 
