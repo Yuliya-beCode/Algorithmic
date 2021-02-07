@@ -215,6 +215,75 @@
 
     <h1>Trial by pseudo code</h1>
 
+    <h2>I - list of random numbers</h2>
+
+    <p>Write a function which returns an array of n random numbers, n being the only received parameter.</p>
+    <script>
+      function randomArray(n) {
+        let array = []
+        for (let i = 0; i < n; i++) {
+          array.push(Math.floor(Math.random() * Math.floor(1000)))
+        }
+        return array
+      }
+    </script>
+
+    <h2>II - translate</h2>
+
+    <p>
+
+      The main goal of pseudo code is to write down the logic behind an algorithm, so that you can easily translate it
+      into human speech or code.
+      Given the algorithm below
+
+      with your word explain its purpose
+
+      translate it into Python and Javascript
+
+      function in_array(element,list_elements) {
+      boolean exist = false
+      for I = 0 until length($list_elements) do {
+      if $element == $list_elements[I] then {
+      $exist = true
+      }
+      }
+      return $exist
+      }
+
+    </p>
+
+    <br>
+    <p>Variant 1</p>
+
+    <script>
+      function inArray(element, list_elements) {
+        let exist = false
+        list_elements.array.forEach(element => {
+          if (item == element) exist = true
+        })
+        return exist
+      }
+    </script>
+
+    <p>Variant 2</p>
+
+    <script>
+      function inArray(element, list_elements) {
+        let exist = false
+        for (let i = 0; i < list_elements.length; i++) {
+          he main goal of pseudo code is to write down the logic behind an algorithm,
+            so that you can easily translate it
+          into human speech or code.
+          Given the algorithm below
+
+          with your word explain its purpose
+
+          translate it into Python and Javascript < br >
+            return exist
+        }
+    </script>
+
+
     <p>III - sort an array</p>
 
     <h2>JavaScript Array Sort</h2>
@@ -239,34 +308,24 @@
 
     <h2>II - translate</h2>
 
-    <p>
 
-      The main goal of pseudo code is to write down the logic behind an algorithm, so that you can easily translate it
-      into human speech or code.
-      Given the algorithm below
 
-      with your word explain its purpose
-
-      translate it into Python and Javascript <br>
-
-      <br>
-
-      function in_array(element,list_elements) { <br>
-            boolean exist = false <br>
-            for I = 0 until length($list_elements) do { <br>
-		        if $element == $list_elements[I] then {  <br>
-			      $exist = true
-		    }
-      	}
-	    return $exist <br>
-        }
+    function in_array(element,list_elements) { <br>
+    boolean exist = false <br>
+    for I = 0 until length($list_elements) do { <br>
+    if $element == $list_elements[I] then { <br>
+    $exist = true
+    }
+    }
+    return $exist <br>
+    }
 
     </p>
-   
+
     <h3>Translation in JavaScript</h3>
-  
-   <script>
-        var in_array = ["list", "list_elements"];
+
+    <script>
+      var in_array = ["list", "list_elements"];
 
       // Check if a value exists in the fruits array
       if (in_array.indexOf("element") !== 1) {
@@ -274,7 +333,6 @@
       } else {
         document.write("false")
       }
-   
     </script>
 
 
