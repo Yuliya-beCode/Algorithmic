@@ -218,15 +218,15 @@
     <h2>I - list of random numbers</h2>
 
     <p>Write a function which returns an array of n random numbers, n being the only received parameter.</p>
-    <script>
-      function randomArray(n) {
-        let array = []
-        for (let i = 0; i < n; i++) {
-          array.push(Math.floor(Math.random() * Math.floor(1000)))
-        }
-        return array
-      }
-    </script>
+   
+      function randomArray(n) { <br>
+        let array = [] <br>
+        for (let i = 0; i < n; i++) { <br>
+          array.push(Math.floor(Math.random() * Math.floor(1000))) <br>
+        } <br>
+        return array <br>
+      } <br>
+   
 
     <h2>II - translate</h2>
 
@@ -261,34 +261,28 @@
 
     <p>Variant 1</p>
 
-    <script>
-      function inArray(element, list_elements) {
-        let exist = false
-        list_elements.array.forEach(element => {
-          if (item == element) exist = true
-        })
-        return exist
-      }
-    </script>
+
+    function inArray(element, list_elements) { <br>
+    let exist = false <br>
+    list_elements.array.forEach(element => { <br>
+    if (item == element) exist = true <br>
+    }) <br>
+    console.log(exist); <br>
+
+    } <br>
+
 
     <p>Variant 2</p>
 
-    <script>
-      function inArray(element, list_elements) {
-        let exist = false
-        for (let i = 0; i < list_elements.length; i++) {
-          he main goal of pseudo code is to write down the logic behind an algorithm,
-            so that you can easily translate it
-          into human speech or code.
-          Given the algorithm below
+   
+      function inArray(element, list_elements) {<br>
+        
+          let exist = false <br>
 
-          with your word explain its purpose
-
-          translate it into Python and Javascript < br >
-            return exist
-        }
-    </script>
-
+            for (let i = 0; i < list_elements.length; i++) { <br>
+              return exist <br>
+            }<br>
+   
 
     <p>III - sort an array</p>
 
