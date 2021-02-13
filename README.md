@@ -1,6 +1,6 @@
 # Algorithmic
 
-[Link](https://yuliya-becode.github.io/Algorithmic/index.html)
+[Link to Algo-tasks](https://yuliya-becode.github.io/Algorithmic/index.html)
 
 Algorithmic conventions
 Comments
